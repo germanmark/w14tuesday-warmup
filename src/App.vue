@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ToastNotification/>
+    <PostButton/>
+    <DeleteButton/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DeleteButton from './components/DeleteButton.vue'
+import PostButton from './components/PostButton.vue'
+import ToastNotification from './components/ToastNotification.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ToastNotification,
+    DeleteButton,
+    PostButton
   }
 }
 </script>
